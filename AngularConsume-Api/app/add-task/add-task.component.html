@@ -1,0 +1,35 @@
+<form [formGroup]="myForm" (ngSubmit)="insert()">
+    <table class="table table-hover  table-bordered border-danger " >
+        <tbody>
+        <tr>
+            <td>Enter AssignmentId</td>
+            <td>:</td>
+            <td><input type="text" formControlName="AssignmentId"/></td>
+        </tr>
+        <tr>
+            <td>Enter ProjectId</td>
+            <td>:</td>
+            <td><input type="text" formControlProjectId="ProjectId"/></td>
+        </tr>
+        <tr>
+            <td>Enter AssignedTo</td>
+            <td>:</td>
+            <td><input type="text" formControlName="AssignedTo"/></td>
+        </tr>
+        <tr>
+            <td>Enter TaskDescription</td>
+            <td>:</td>
+            <td><input type="text" formControlName="TaskDescription"/></td>
+        </tr>
+        <tr>
+            <td>Enter Deadline</td>
+            <td>:</td>
+            <td><input type="text" formControlName="Deadline"/></td>
+        </tr>
+      
+        <tr>
+            <td colspan="3" style="text-align: center;"> <button class="btn btn-outline-info " [value]="btnName">Add</button></td>
+           
+        </tr></tbody>
+    </table>
+    </form>

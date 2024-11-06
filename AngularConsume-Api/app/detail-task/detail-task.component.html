@@ -1,0 +1,14 @@
+<div class="card col-5 border-danger">
+    <div class="card-body bo">
+      <h5 class="card-title">AssignmentId: {{data.AssignmentId}}</h5>
+      <h5 class="card-title">ProjectId : {{data.ProjectId}}</h5>
+      <h5 class="card-title">AssignedTo : {{data.AssignedTo}}</h5>
+      <h5 class="card-title">TaskDescription : {{data.TaskDescription}}</h5>
+      <h5 class="card-title">Deadline : {{data.Deadline}}</h5>
+    
+      <button routerLink="/tasks" class="btn btn-primary m-2">Back</button>
+      <button routerLink="/tasks/edit/{{data.AssignmentId}}" class="btn btn-warning m-2">Edit</button>
+      <button (click)="delete()" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+
